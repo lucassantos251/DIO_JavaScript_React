@@ -1,7 +1,8 @@
 import React from 'react'
+import './index.css'
 
 export default function index() {
   return (
-    <div>Profile</div>
+    <div className='profile-wrapper'>Profile</div>
   )
 }

@@ -1,7 +1,8 @@
 import React from 'react'
+import './index.css'
 
 export default function index() {
   return (
-    <div>Repo</div>
+    <div className='repo-wrapper'>Repo</div>
   )
 }
