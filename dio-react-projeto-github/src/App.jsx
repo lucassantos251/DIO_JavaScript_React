@@ -1,21 +1,18 @@
 import React from 'react'
-import { Profile, Repo } from './containers';
-import { Button } from './components'
+import { Layout, Profile, Repositories, Starred } from './containers';
 
-import './App.css'
+import './global/destyle.css'
 
-export default function App() {
+const App = () => {
   return (
-    <div className='app-wrapper'>
-      <h1>GitHub Project</h1>
-
-      <div className='app-content'>
+    <main>
+      <Layout>
         <Profile />
-        <Repo />
-      </div>
-
-      <Button>Botão</Button>
-
-    </div>
+        <Repositories />
+        <Starred />
+      </Layout>
+    </main>
   );
 }
+
+export default App

@@ -1,9 +1,6 @@
-.repo-wrapper{  
+.starred-wrapper{  
   background-color: #777;
   color: #eee;
-
-  width: 35vw;
-  height: 25vh;
 
   display: flex;
   flex-direction: column;

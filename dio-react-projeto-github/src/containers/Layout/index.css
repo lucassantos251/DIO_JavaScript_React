@@ -1,0 +1,16 @@
+body {
+  background: #444;
+  color: #ddd;
+  padding: 0;
+  margin: 0;
+  font-family: roboto, sans-serif;
+}
+
+.layout-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 20px;
+}

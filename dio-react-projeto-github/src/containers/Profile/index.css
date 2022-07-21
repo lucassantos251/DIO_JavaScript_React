@@ -2,16 +2,69 @@
   background-color: #777;
   color: #eee;
 
-  width: 35vw;
-  height: 25vh;
-
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
 
   border: 1px solid #eee;
   border-radius: 15px;
 
   margin: 5px;
 }
+
+.profile-wrapper-img {
+  border-radius: 50%;
+  width: 250px;
+  margin: 10px 20px
+}
+
+.profile-wrapper-info-user{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 200px;
+  margin: 10px 20px;
+}
+
+.profile-wrapper-info-user h1{
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.profile-wrapper-info-user h3{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.profile-wrapper-info-user h4{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+.profile-wrapper-username{
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.profile-wrapper-username h3{
+  margin-right: 10px;
+}
+
+.profile-wrapper-username a{
+  font-size: 18px;
+  color: #1a44c6;
+  font-weight: bold;
+}
+
+.profile-wrapper-status-count{
+  display: flex;
+  align-items: center;
+}
+
+.profile-wrapper-status-count div{
+  margin: 10px;
+  text-align: center;
+}
+

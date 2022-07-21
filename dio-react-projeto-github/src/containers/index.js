@@ -1,7 +1,13 @@
 import Profile from './Profile/index'
-import Repo from './Repo/index'
+import Repositories from './Repositories/index'
+import Header from './Header/index'
+import Layout from './Layout/index'
+import Starred from './Starred'
 
 export {
   Profile,
-  Repo
+  Repositories,
+  Header,
+  Layout,
+  Starred
 }
