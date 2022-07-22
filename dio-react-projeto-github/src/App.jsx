@@ -1,5 +1,5 @@
 import React from 'react'
-import { Layout, Profile, Repositories } from './containers';
+import { Layout, NoSearch, Profile, Repositories } from './containers';
 import useGithub from './hooks/github-hooks';
 
 const App = () => {
@@ -13,7 +13,7 @@ const App = () => {
         <>
           <Profile /><Repositories />
         </>}
-      </> : <div>Nenhum usuário pesquisado.</div>}      
+      </> : <NoSearch />}      
     </Layout>
   );
 }

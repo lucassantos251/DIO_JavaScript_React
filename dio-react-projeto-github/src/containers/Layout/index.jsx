@@ -1,6 +1,5 @@
 import React from 'react'
 import Header from '../Header'
-import useGithub from '../../hooks/github-hooks'
 import './index.css'
 
 function Layout({ children }) {

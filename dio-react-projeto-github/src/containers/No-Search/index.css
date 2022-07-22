@@ -1,0 +1,10 @@
+.nosearch-wrapper{
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.nosearch-wrapper h1{
+  font-weight: bold;
+  font-size: 32px;
+}
