@@ -1,22 +1,26 @@
-import React from 'react'
-import { useState } from 'react'
+import React, { useState } from 'react'
 import { Button } from '../../components'
+import useGithub from '../../hooks/github-hooks'
+import './index.css'
 
 const Header = () => {
+  const { getUser } = useGithub()
   const [usernameForSearch, setUsernameForSearch] = useState('')
 
-  function submitGetUser () {
-
+  const submitGetUser = () => {
+    if(!usernameForSearch){
+      return
+    }
+    return getUser(usernameForSearch)
   }
 
   return (
-    <div>
-      <h1>GitHub Project</h1>
-      <p>Buscador:
+    <header>
+      <div className='header-wrapper'>
         <input type='text' placeholder='Digite o username para pesquisa' onChange={(event) => setUsernameForSearch(event.target.value)}></input>
-        <Button type='submit' onClick={submitGetUser}>Buscar</Button>
-      </p>
-    </div>
+        <Button className='header-wrapper' type='submit' onClick={submitGetUser}>Buscar</Button>
+      </div>
+    </header>
   )
 }
 

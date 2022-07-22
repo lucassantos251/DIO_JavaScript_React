@@ -1,19 +1,20 @@
 import React from 'react'
 import { Layout, Profile, Repositories } from './containers';
-import GithubProvider from './providers/github-provider';
-
-import './global/destyle.css'
+import useGithub from './hooks/github-hooks';
 
 const App = () => {
+  const {githubState} = useGithub()
+
   return (
-    <main>
-      <GithubProvider>
-        <Layout>
-          <Profile />
-          <Repositories />
-        </Layout>
-      </GithubProvider>
-    </main>
+    <Layout>
+      {githubState.hasUser ? 
+      <>
+        {githubState.loading ? <p>Loading</p> : 
+        <>
+          <Profile /><Repositories />
+        </>}
+      </> : <div>Nenhum usuário pesquisado.</div>}      
+    </Layout>
   );
 }
 

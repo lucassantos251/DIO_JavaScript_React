@@ -42,17 +42,17 @@
 }
 
 
-.profile-wrapper-username{
+.profile-wrapper-user-generic{
   display: flex;
   align-items: center;
   margin: 10px 0;
 }
 
-.profile-wrapper-username h3{
+.profile-wrapper-user-generic h3{
   margin-right: 10px;
 }
 
-.profile-wrapper-username a{
+.profile-wrapper-user-generic a{
   font-size: 18px;
   color: #1a44c6;
   font-weight: bold;
