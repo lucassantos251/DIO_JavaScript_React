@@ -1,13 +1,16 @@
 import React from 'react'
+import useGithub from '../../hooks/github-hooks'
 import './index.css'
 
 const Profile = () => {
+  const { githubState } = useGithub()
+  
   return (
     <div className='profile-wrapper'>
       <img className='profile-wrapper-img' src='https://avatars.githubusercontent.com/u/54688253?v=4' alt='user avatar'/>
       <div className='profile-wrapper-info-user'>
         <div>
-          <h1>Lucas Santos</h1>
+          <h1>{githubState.user.name}</h1>
           <div className='profile-wrapper-username'>
             <h3>Username:</h3>
             <a href='https://github.com/lucassantos251' target='_blank' rel='noreferrer'>lucassantos251</a>

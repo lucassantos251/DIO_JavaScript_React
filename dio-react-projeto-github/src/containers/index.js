@@ -2,12 +2,12 @@ import Profile from './Profile/index'
 import Repositories from './Repositories/index'
 import Header from './Header/index'
 import Layout from './Layout/index'
-import Starred from './Starred'
+import RepositoryItem from './Repository-Item/index'
 
 export {
   Profile,
   Repositories,
   Header,
   Layout,
-  Starred
+  RepositoryItem
 }
